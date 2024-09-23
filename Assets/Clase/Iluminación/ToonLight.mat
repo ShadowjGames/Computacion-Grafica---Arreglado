@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SimpleLit
-  m_Shader: {fileID: -6465566751694194690, guid: 71d5fced78115d54c945130acd36e157,
+  m_Name: ToonLight
+  m_Shader: {fileID: -6465566751694194690, guid: 5a36b65271034d44890550933bf13c38,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -24,14 +24,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: e668e1ec95f289a40b4beab9f59e5bba, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Normal:
-        m_Texture: {fileID: 2800000, guid: 9471a7a7bc4905a439a2c674fc770205, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -50,7 +42,7 @@ Material:
     - _QueueOffset: 0
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!114 &7692626399898220711
+--- !u!114 &3179168240833124604
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
