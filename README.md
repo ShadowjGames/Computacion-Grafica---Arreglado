@@ -1,1 +1,1 @@
-# Computacion-Grafica---Arreglado
+# Computación Gráfica - Arreglado
