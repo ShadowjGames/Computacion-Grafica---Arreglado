@@ -9,5 +9,5 @@ https://youtu.be/1svym8RLCkQ
 
 - https://youtu.be/cVSLuVF7XUQ
 
-## Taller #1 - Escudo de fuego
-k
+## Taller #1 - Efecto de fuego
+https://youtu.be/U61YhpRcQQU
