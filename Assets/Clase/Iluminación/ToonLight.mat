@@ -24,6 +24,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonGradient:
+        m_Texture: {fileID: 2800000, guid: dc4bba7fd65e7174eaa4a4cb71aca893, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -38,8 +46,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - MAIN_LIGHT_CALCULATE_SHADOWS: 0
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Smoothness: 0.25
     m_Colors: []
   m_BuildTextureStacks: []
 --- !u!114 &3179168240833124604
