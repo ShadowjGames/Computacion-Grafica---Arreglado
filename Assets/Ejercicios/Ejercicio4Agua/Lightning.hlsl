@@ -1,26 +1,26 @@
-//#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
-//#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Texture.hlsl"
+//Include Guard
+#ifndef LIGHTING_T_INCLUDED
+#define LIGHTING_T_INCLUDED
 
-void GetMainLight_float(float3 positionWS, out float3 direction, out float3 color, out float shadowAttenuation) {
-#if !defined(SHADERGRAPH_PREVIEW)
-    Light light;
-    float4 shadowCoord = TransformWorldToShadowCoord(positionWS);
-    light = GetMainLight(shadowCoord);
-    direction = light.direction;
-    color = light.color;
+#define ADD(a,b) add(a,b)
 
-    ShadowSamplingData shadowData = GetMainLightShadowSamplingData();
-    float shadowIntensity = GetMainLightShadowStrength();
-
-    shadowAttenuation = SampleShadowmap(shadowCoord, TEXTURE2D_ARGS(_MainLightShadowmapTexture, sampler_MainLightShadowmapTexture), shadowData, shadowIntensity, false);
-
-#else
-    direction = float3(1, 1, -1);
+void GetMainLightInfo_float(float3 positionWS, out float3 direction, out half3 color, out float shadowAttenuation)
+{
+    //Si estoy en el shader invento luz
+    #if defined(SHADERGRAPH_PREVIEW)
+    direction = float3(1,1,-1);
     color = 1;
     shadowAttenuation = 1;
-#endif
+    #else
+    Light mainLight = GetMainLight();
+    direction = mainLight.direction;
+    color = mainLight.color;
+    float4 shadowCoord = TransformWorldToShadowCoord(positionWS);
+    ShadowSamplingData samplingData = GetMainLightShadowSamplingData();
+    float shadowStrength = GetMainLightShadowStrength();
+    shadowAttenuation = SampleShadowmap(shadowCoord, TEXTURE2D_ARGS(_MainLightShadowmapTexture, sampler_MainLightShadowmapTexture), samplingData, shadowStrength, false);
+    #endif
 }
-
 void ShadeToonAdditionalLights_float(float3 normalWS, float3 positionWS, UnityTexture2D toonGrading, UnitySamplerState sState,
     float3 viewDirWS, half smoothness, out half3 diffuse, out half3 specular) {
 
@@ -30,7 +30,7 @@ void ShadeToonAdditionalLights_float(float3 normalWS, float3 positionWS, UnityTe
 #if !defined(SHADERGRAPH_PREVIEW)    
     int additionalLightCount = GetAdditionalLightsCount();
 
-    [unroll(8)]
+    [unroll(2)]
     for (int lightId = 0; lightId < additionalLightCount; lightId++) {
 
         Light additionalLight = GetAdditionalLight(lightId, positionWS);
@@ -51,3 +51,10 @@ void ShadeToonAdditionalLights_float(float3 normalWS, float3 positionWS, UnityTe
     }
 #endif
 }
+
+void Add_float(float a, float b,out float c)
+{
+    c = a + b;
+}
+
+#endif

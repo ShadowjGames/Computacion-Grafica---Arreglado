@@ -37,8 +37,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _LowerPerlinNoise:
-        m_Texture: {fileID: 2800000, guid: 4a163499352dae24b8f2a9b7fba16f2b, type: 3}
+        m_Texture: {fileID: 2800000, guid: d7345e228fc055d42bc7c06896be2628, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -46,11 +50,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Reflection:
+        m_Texture: {fileID: 8900000, guid: e95612668e646a84abd29383bdcd5a2e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_9512d95aadd5446f99032f1f8c77a4fa_Out_0_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 99fd1cb189d24fa4a87f630b3fcfe629, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonGradient:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _UpperPerlinNoise:
-        m_Texture: {fileID: 2800000, guid: 1bfc9e99be0528045802843355ce36cd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 62d73b86a54f89e458132c4c8c7c900c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -67,14 +79,35 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DisplacementAmount: 0.5
+    - _DisplacementAmount: 0.6
+    - _FoamAmount: 0.8
+    - _FoamCutoff: 2
+    - _FoamScale: 100
+    - _FoamSpeed: 1
+    - _MAIN_LIGHT_CALCULATE_SHADOWS: 0
+    - _MAIN_LIGHT_SHADOWS_CASCADE: 0
     - _NoiseRotation: 30
-    - _NormalStrenght: 1
+    - _NormalStrenght: 0.8
+    - _NormalTiling: 0.72
+    - _NormalVelocity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _RefractionSpeed: 1
     - _RefractionStrenght: 100
+    - _RippleDensity: 5
+    - _RippleSlimness: 8
+    - _RippleSpeed: 1
+    - _SHADOWS_SOFT: 0
+    - _Smoothness: 0
+    - _USEFRESNELOUTLINE: 0
+    - _WaterDepth: 0
     m_Colors:
+    - _BaseColor: {r: 0.12549017, g: 0.61812186, b: 0.8509804, a: 0.69411767}
+    - _DeepWaterColor: {r: 0.12902126, g: 0.08242787, b: 0.8566037, a: 0}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseSpeed: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _NormalTiling: {r: 1, g: 1, b: 1, a: 0}
     - _NormalVelocity: {r: 1, g: 1, b: 1, a: 0}
+    - _RippleColor: {r: 0.26401937, g: 0.36756715, b: 1.216786, a: 1}
+    - _ShallowWaterColor: {r: 0.4811319, g: 1, b: 0.993053, a: 0}
   m_BuildTextureStacks: []
