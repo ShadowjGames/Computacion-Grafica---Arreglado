@@ -16,9 +16,10 @@ https://youtu.be/U61YhpRcQQU
 https://youtu.be/2F8fyq6bxsU
 
 ## Ejercicio #5 - Demo (Avances)
-Tengo presente que la fecha de entrega ya ha pasado, pero al menos quiero informar de que estoy haciendo el intento de terminar con los requerimientos. He estado teniendo problemas con la realización de la demo y ya ha pasado el tiempo suficiente para al menos demostrar que sí se ha hecho algo. Por eso, de forma preliminar si es que logro terminar en la brevedad de los días al menos en formato de video la demo, montaré los efectos resultantes (aunque solo falta la sincronización con el personaje).
+https://play.unity.com/en/games/8beaba3a-6027-4f64-9dac-ae2d8da49c9f/webgl-builds
+A pesar de estar subido, el resultado final no procesó bien los efectos. Por lo tanto, aquí hay un video de los efectos funcionales desde el editor. Como tal, WebGL está funcionando bien, pero sin los efectos deseados a partir de Visual Effects
 
-De todas formas, esta entrega es de forma temporal para mostrar muestras de trabajo. A más tardar mañana subiré todo con las especificaciones adecuadas.
+**Video:** https://youtu.be/REL11JHT990
 
 ### Concepto
 En realidad no tuve algo claro en mente. Lo más cercano eran dos elementos: El azul al ser mi color favorito y Shadow Fight 2 y algunas de las magias que utiliza. Por eso, y en base a tutoriales y algunas consultas, busqué la forma de plasmar ambos conceptos. Los dibujos representan más o menos el objetivo final de cada partícula.
