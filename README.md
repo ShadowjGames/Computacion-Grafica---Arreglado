@@ -17,6 +17,7 @@ https://youtu.be/2F8fyq6bxsU
 
 ## Ejercicio #5 - Demo (Avances)
 https://play.unity.com/en/games/8beaba3a-6027-4f64-9dac-ae2d8da49c9f/webgl-builds
+
 A pesar de estar subido, el resultado final no procesó bien los efectos. Por lo tanto, aquí hay un video de los efectos funcionales desde el editor. Como tal, WebGL está funcionando bien, pero sin los efectos deseados a partir de Visual Effects
 
 **Video:** https://youtu.be/REL11JHT990
